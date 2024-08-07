@@ -12,6 +12,7 @@ body {
 
 .header {
   padding: 44px 50px;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,7 +73,7 @@ li {
   min-width: 530px;
 }
 
-.info__title > strong {
+.info__title>strong {
   text-transform: uppercase;
 }
 
