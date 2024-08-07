@@ -1,142 +1,135 @@
 * {
   font-family: DM Sans;
+  box-sizing: border-box;
   margin: 0;
 }
 
 body {
   background-color: #191919;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .header {
-  margin: 26px 0px;
-  box-sizing: border-box;
+  padding: 44px 50px;
   display: flex;
   justify-content: space-between;
-  height: 67px;
+  align-items: center;
 }
 
-.header_logo {
-  margin: 0;
-  padding: 17px 0px 17px 50px;
+.header__logo {
+  height: 33px;
 }
 
-.header_nav {
-  margin: 0;
+.menu {
   display: flex;
+  padding-left: 20px;
+  gap: 40px;
+}
+
+li {
   list-style: none;
-  padding: 17px 50px 17px 0px;
 }
 
-.header_nav > li {
-  margin: 20px;
-  align-self: center;
-}
-
-.header_nav .active {
-  color: #118da8;
-}
-
-.header_nav > li > a {
-  color: #ffffff;
+.menu__item {
+  color: #fff;
   text-decoration: none;
 }
 
-.header_nav > li > a:hover {
+.menu__item_active,
+.menu__item:hover {
   color: #118da8;
 }
 
-.listen {
-  margin: 0px 20px;
-  padding: 40px 50px 0px 50px;
+.main {
   display: flex;
-  box-sizing: border-box;
+  padding: 40px 70px 0 70px;
   position: relative;
   gap: 60px;
+  min-width: 1300px;
 }
 
-.salute {
+.image__salute {
   position: absolute;
   top: 15px;
-  left: 30px;
+  left: 50px;
 }
 
-.negr {
-  max-height: 875px;
-}
-
-.level {
-  box-sizing: border-box;
+.info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 0px 60px 0px 0px;
-  gap: 233px;
+  justify-content: center;
+  position: relative;
 }
 
-.level > p {
-  color: #ffffff;
+.info__title {
+  color: #fff;
+  font-weight: 300;
   font-size: 64px;
   line-height: 88px;
   letter-spacing: 3.2px;
-  margin-top: 305px;
+  padding-right: 60px;
   min-width: 530px;
 }
 
-p > span {
+.info__title > strong {
   text-transform: uppercase;
-  font-weight: bold;
 }
 
 .stream {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   gap: 16px;
 }
 
-.stream > p {
-  color: #ffffff;
+.stream__text {
+  color: #fff;
   font-size: 15px;
   line-height: 24px;
 }
 
-.streamflex {
-  box-sizing: border-box;
+.icons {
+  padding-left: 0;
   display: flex;
   gap: 17px;
 }
 
 .episodes {
-  margin: 0px 20px;
-  padding: 100px 50px 160px 50px;
   display: flex;
-  box-sizing: border-box;
+  padding: 100px 70px 0 70px;
   flex-direction: column;
+  gap: 40px;
+  min-width: 1300px;
 }
 
 .title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 40px;
 }
 
-.latest {
-  width: fit-content;
-  margin: 10px 0px;
-  color: #ffffff;
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.title__name {
   font-size: 64px;
-  line-height: 80px;
+  line-height: 79px;
   letter-spacing: 2.88px;
+  color: #fff;
 }
 
 .btn {
-  box-sizing: border-box;
-  width: 178px;
+  display: block;
+  width: fit-content;
   height: 51px;
   background-color: #118da8;
-  color: #ffffff;
+  color: #fff;
   border-radius: 7px;
   border: none;
   cursor: pointer;
@@ -151,67 +144,62 @@ p > span {
   background-color: rgba(17, 141, 168, 0.7);
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
+ul {
+  padding-left: 0;
 }
 
-.ep {
+.list {
   display: flex;
+  gap: 53px;
   box-sizing: border-box;
   padding: 40px;
   background-color: #000000;
   border-radius: 32px;
-  gap: 53px;
-  min-width: 1300px;
+  position: relative;
 }
 
-.card_info {
-  gap: 0;
-}
-
-.card_info__tag {
-  width: fit-content;
-  height: fit-content;
-  margin-top: 7.5px;
-  padding: 0px 16px;
-  border-radius: 7px;
+.item__tag {
   background-color: #191919;
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 27px;
+  width: fit-content;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0 16px;
+  margin-top: 8px;
+  margin-bottom: 48px;
 }
 
-.card_info__no {
-  margin-top: 48.5px;
-  color: #118da8;
-  font-size: 17px;
-  line-height: 27px;
+.item__no {
   text-decoration: none;
+  color: #118da8;
 }
 
-.card_info__title {
-  margin: 18px 77px 0px 0px;
-  color: #ffffff;
+.item__title {
+  color: #fff;
   font-size: 64px;
   line-height: 70px;
   letter-spacing: 2.56px;
+  margin-top: 18px;
+  margin-bottom: 28px;
+  padding-right: 77px;
+  min-width: 701px;
 }
 
-.card_info__preview {
-  margin: 28px 21px 0px 0px;
+.item__text {
   color: rgba(255, 255, 255, 0.7);
+  padding-right: 21px;
+  margin-bottom: 18px;
   font-size: 22px;
   line-height: 33px;
+  min-width: 757px;
 }
 
-.btn_card {
-  width: 208px;
-  height: 51px;
-  font-size: 18px;
-  margin: 18px 0px 0px;
+.btn_episodes {
+  margin: 0;
+  position: absolute;
+  bottom: 40px;
 }
+
+/* 
 
 .jacob {
   display: flex;
@@ -416,3 +404,4 @@ input:focus {
 .site2 > a:hover {
   color: rgba(255, 255, 255, 0.7);
 }
+*/
