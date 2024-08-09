@@ -99,10 +99,7 @@ li {
   padding-left: 0;
   display: flex;
   gap: 17px;
-}
-
-.icons > a {
-  display: flex;
+  height: 32px;
 }
 
 .episodes {
@@ -159,7 +156,6 @@ ul {
 .episode {
   display: flex;
   gap: 53px;
-  box-sizing: border-box;
   padding: 40px;
   background-color: #000000;
   border-radius: 32px;
@@ -206,7 +202,7 @@ ul {
   min-width: 530px;
 }
 
-.btn_episodes {
+.btn_start {
   align-self: flex-start;
 }
 
@@ -223,7 +219,7 @@ ul {
   gap: 25px;
 }
 
-.btn_host {
+.btn_circle {
   border-radius: 50%;
   width: 112px;
   height: 112px;
@@ -262,7 +258,6 @@ ul {
 }
 
 input {
-  box-sizing: border-box;
   color: rgba(255, 255, 255, 0.7);
   background-color: #191919;
   border: none;
@@ -279,7 +274,7 @@ input:focus {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.btn_form {
+.btn_small {
   font-size: 15px;
   margin: 0;
 }
@@ -303,14 +298,13 @@ input:focus {
 
 .card {
   display: flex;
-  box-sizing: border-box;
   flex-direction: column;
   gap: 20px;
   padding: 54px 60px 51px 50px;
   width: 423px;
 }
 
-.card__rev {
+.card__review {
   font-size: 36px;
   line-height: 43px;
   color: #ffffff;
@@ -324,14 +318,12 @@ input:focus {
 
 .footer {
   display: flex;
-  box-sizing: border-box;
   padding: 100px 70px;
   gap: 16px;
 }
 
 .footer__logo {
   display: flex;
-  box-sizing: border-box;
   flex-direction: column;
   gap: 20px;
   width: 447px;
